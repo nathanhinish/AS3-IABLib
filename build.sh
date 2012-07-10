@@ -2,7 +2,7 @@
 #
 # ./build.sh -d will build the Documentation (docs/index.html)
 # ./build.sh -e will build the example SWF (example.swf)
-# ./build.sh -s will build the SWC library (VASTLib.SWC)
+# ./build.sh -s will build the SWC library (IABLib.SWC)
 # ./build.sh -des will build all.
 
 
@@ -18,11 +18,11 @@ do
                 -output=docs
             ;;
         e) 
-            mxmlc examples/src/com/hinish/examples/vast/VASTLibExample.as \
+            mxmlc examples/src/com/hinish/examples/vast/VASTExample1.as \
                 --source-path+=examples/src \
                 --library-path+=examples/libs \
                 -static-link-runtime-shared-libraries \
-                --output=examples/bin/VASTLibExample.swf
+                --output=examples/bin/VASTExample1.swf
             ;;
         s) 
             compc \

@@ -9,7 +9,7 @@ package com.hinish.examples.vast
     import flash.utils.setTimeout;
 
 
-    public class VASTLibExample extends Sprite
+    public class VASTExample1 extends Sprite
     {
         [Embed(source = "../../../../../resources/vast_sample_1.xml", mimeType = "application/octet-stream")]
         private static const SAMPLE_1:Class;
@@ -17,7 +17,7 @@ package com.hinish.examples.vast
         [Embed(source = "../../../../../resources/vast_sample_2.xml", mimeType = "application/octet-stream")]
         private static const SAMPLE_2:Class;
         
-        public function VASTLibExample()
+        public function VASTExample1()
         {
             setTimeout(parseVast, 2500);
         }
