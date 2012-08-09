@@ -4,7 +4,9 @@ package com.hinish.spec.iab.vpaid
     
     import flash.display.Sprite;
 
-
+    // Import the [Event] metadata tags
+    // to make upkeep easier.
+    include './../../../../../../includes/AdBaseEventMeta.as';
     /**
      * The base class for ads that
      * extend the Sprite class.

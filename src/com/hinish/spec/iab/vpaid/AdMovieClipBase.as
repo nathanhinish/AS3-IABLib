@@ -4,6 +4,9 @@ package com.hinish.spec.iab.vpaid
     
     import flash.display.MovieClip;
 
+    // Import the [Event] metadata tags
+    // to make upkeep easier.
+    include './../../../../../../includes/AdBaseEventMeta.as';
     /**
      * The base class for ads that
      * extend MovieClip. If the ad
