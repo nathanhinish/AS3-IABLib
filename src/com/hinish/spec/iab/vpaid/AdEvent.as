@@ -61,7 +61,7 @@ package com.hinish.spec.iab.vpaid
          * players using earlier versions of VPAID receive notice
          * that the ad has stopped playing.</p>
          */
-        public static const AD_SKIPPED:String = "AdLinearChange";
+        public static const AD_SKIPPED:String = "AdSkipped";
 
         /**
          * When an ad unit only allows its creative to be skipped within
