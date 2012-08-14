@@ -16,7 +16,7 @@ package com.hinish.spec.iab.vpaid
      * @langversion 3.0
      * @playerversion Flash 10
      */
-    public class AdMovieClipBase extends MovieClip implements IAd
+    public class AdMovieClipBase extends MovieClip implements IVPAIDAd
     {
         public function AdMovieClipBase()
         {

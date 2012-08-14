@@ -14,7 +14,7 @@ package com.hinish.spec.iab.vpaid
      * @langversion 3.0
      * @playerversion Flash 10
      */
-    public class AdSpriteBase extends Sprite implements IAd
+    public class AdSpriteBase extends Sprite implements IVPAIDAd
     {
         public function AdSpriteBase()
         {
