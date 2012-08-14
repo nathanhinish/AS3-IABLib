@@ -149,7 +149,7 @@ package com.hinish.spec.iab.vpaid
 		 * calls resizeAd(). The resizeAd() method provides the video
 		 * player’s maximum allowed value for height, but the adHeight
 		 * property provides the ad’s actual height, which must be equal
-		 * to or less than the video player’s supplied height.
+		 * to or less than the video player’s supplied height.</p>
 		 */
 		function get adHeight():Number;
 
