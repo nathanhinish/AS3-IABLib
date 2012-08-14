@@ -3,16 +3,21 @@ package com.hinish.spec.iab.vpaid
     [Event(name="AdClickThru", type="com.hinish.spec.iab.vpaid.AdEvent")]
     [Event(name="AdError", type="com.hinish.spec.iab.vpaid.AdEvent")]
     [Event(name="AdExpandedChange", type="com.hinish.spec.iab.vpaid.AdEvent")]
-    [Event(name="AdImpression", type="com.hinish.spec.iab.vpaid.AdEvent")]
+	[Event(name="AdImpression", type="com.hinish.spec.iab.vpaid.AdEvent")]
+	[Event(name="AdInteraction", type="com.hinish.spec.iab.vpaid.AdEvent")]
     [Event(name="AdLinearChange", type="com.hinish.spec.iab.vpaid.AdEvent")]
     [Event(name="AdLoaded", type="com.hinish.spec.iab.vpaid.AdEvent")]
     [Event(name="AdLog", type="com.hinish.spec.iab.vpaid.AdEvent")]
     [Event(name="AdPaused", type="com.hinish.spec.iab.vpaid.AdEvent")]
     [Event(name="AdPlaying", type="com.hinish.spec.iab.vpaid.AdEvent")]
     [Event(name="AdRemainingTimeChange", type="com.hinish.spec.iab.vpaid.AdEvent")]
+	[Event(name="AdDurationChanged", type="com.hinish.spec.iab.vpaid.AdEvent")]
     [Event(name="AdStarted", type="com.hinish.spec.iab.vpaid.AdEvent")]
-    [Event(name="AdStopped", type="com.hinish.spec.iab.vpaid.AdEvent")]
-    [Event(name="AdUserAcceptInvitation", type="com.hinish.spec.iab.vpaid.AdEvent")]
+	[Event(name="AdStopped", type="com.hinish.spec.iab.vpaid.AdEvent")]
+	[Event(name="AdSkipped", type="com.hinish.spec.iab.vpaid.AdEvent")]
+	[Event(name="AdSkippableStateChange", type="com.hinish.spec.iab.vpaid.AdEvent")]
+	[Event(name="AdSizeChange", type="com.hinish.spec.iab.vpaid.AdEvent")]
+	[Event(name="AdUserAcceptInvitation", type="com.hinish.spec.iab.vpaid.AdEvent")]
     [Event(name="AdUserClose", type="com.hinish.spec.iab.vpaid.AdEvent")]
     [Event(name="AdUserMinimize", type="com.hinish.spec.iab.vpaid.AdEvent")]
     [Event(name="AdVideoComplete", type="com.hinish.spec.iab.vpaid.AdEvent")]
@@ -187,6 +192,13 @@ package com.hinish.spec.iab.vpaid
          */
         function collapseAd():void;
 
+		/**
+		 * This method supports skip controls that the video
+		 * player may implement. This should kick-off the ad
+		 * teardown phase.
+		 */
+		function skipAd():void;
+		
         /**
          * The adLinear Boolean indicates the ad’s 
          * current linear vs. non-linear mode of 
@@ -221,6 +233,11 @@ package com.hinish.spec.iab.vpaid
          */
         function get adExpanded():Boolean;
 
+		/**
+		 * TODO Add documentation
+		 */
+		function get adSkippableState():Boolean;
+
         /**
          * The player may use the adRemainingTime 
          * property to update player UI during ad 
@@ -238,6 +255,11 @@ package com.hinish.spec.iab.vpaid
          */
         function get adRemainingTime():Number;
 
+		/**
+		 * TODO Add documentation
+		 */
+		function get adDuration():Number;
+		
         /**
          * The player uses the adVolume property to 
          * attempt to set or get the ad volume. The 
@@ -255,6 +277,14 @@ package com.hinish.spec.iab.vpaid
          */
         function set adVolume(value:Number):void;
 
-
+		/**
+		 * TODO Add documentation
+		 */
+		function get adCompanions():String;
+		
+		/**
+		 * TODO Add documentation
+		 */
+		function get adIcons():Boolean;
     }
 }
