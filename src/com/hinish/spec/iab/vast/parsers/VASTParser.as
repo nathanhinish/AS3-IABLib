@@ -75,7 +75,7 @@ package com.hinish.spec.iab.vast.parsers
 
             // Test node: VAST.Ad.(InLine|Wrapper).Creatives.Creative
             ad.creatives = new Vector.<Creative>();
-            for each (child in com.hinish.spec.iab.vast.vos.Creative)
+            for each (child in innerNode.Creatives.Creative)
             {
                 ad.creatives.push(parseCreative(child));
             }
@@ -86,7 +86,7 @@ package com.hinish.spec.iab.vast.parsers
             // Test node: VAST.Ad.(InLine|Wrapper).Extensions.Extension
             ad.extensions = new Vector.<IExtension>();
             var ext:IExtension;
-            for each (child in com.hinish.spec.iab.vast.vos.Extension)
+            for each (child in innerNode.Extensions.Extension)
             {
                 ext = parseExtension(child);
                 if (ext)
@@ -333,7 +333,7 @@ package com.hinish.spec.iab.vast.parsers
 
             // Test node: VAST.Ad.(InLine|Wrapper).Creatives.Creative.Linear.MediaFiles.MediaFile
             l.mediaFiles = new Vector.<MediaFile>();
-            for each (child in com.hinish.spec.iab.vast.vos.MediaFile)
+            for each (child in node.MediaFiles.MediaFile)
             {
                 l.mediaFiles.push(parseMediaFile(child));
             }
@@ -394,7 +394,7 @@ package com.hinish.spec.iab.vast.parsers
 
             // Test node: VAST.Ad.(InLine|Wrapper).Creatives.Creative.NonLinearAds.NonLinear
             ads.nonLinears = new Vector.<NonLinear>();
-            for each (child in com.hinish.spec.iab.vast.vos.NonLinear)
+            for each (child in node.NonLinearAds.NonLinear)
             {
                 ads.nonLinears.push(parseNonLinear(child));
             }
