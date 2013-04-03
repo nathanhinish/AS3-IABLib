@@ -85,6 +85,7 @@ package com.hinish.examples.vpaid
             _ad.x = 20;
             _ad.y = 20;
             addChild(_ad as DisplayObject);
+			_ad.startAd();
         }
     }
 }
