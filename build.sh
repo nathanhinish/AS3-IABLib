@@ -28,6 +28,18 @@ else
                     --library-path+=examples/libs \
                     -static-link-runtime-shared-libraries \
                     --output=examples/bin/VASTExample1.swf
+                
+                mxmlc examples/src/com/hinish/examples/vpaid/ExampleAd.as \
+                    --source-path+=examples/src \
+                    --library-path+=examples/libs \
+                    -static-link-runtime-shared-libraries \
+                    --output=examples/bin/ExampleAd.swf
+                
+                mxmlc examples/src/com/hinish/examples/vpaid/Player.as \
+                    --source-path+=examples/src \
+                    --library-path+=examples/libs \
+                    -static-link-runtime-shared-libraries \
+                    --output=examples/bin/Player.swf
                 ;;
             s) 
                 compc \

@@ -1,7 +1,9 @@
-package com.hinish.examples.vast
+package com.hinish.examples.vpaid
 {
     import com.hinish.spec.iab.vpaid.AdEvent;
     import com.hinish.spec.iab.vpaid.AdMovieClipBase;
+    
+    import flash.display.Sprite;
     
     
     /**
@@ -12,10 +14,20 @@ package com.hinish.examples.vast
      */	
     public class ExampleAd extends AdMovieClipBase
     {
+		private var _bg:Sprite;
+		
         public function ExampleAd()
         {
             super();
         }
+		
+		
+		
+		/**************************
+		 * 
+		 * Part of VPAID spec
+		 * 
+		 *************************/
         
         override public function handshakeVersion(playerVPAIDVersion:String):String
         {
@@ -26,6 +38,10 @@ package com.hinish.examples.vast
         override public function initAd(width:Number, height:Number, viewMode:String, desiredBitrate:Number, creativeData:String = "", environmentVars:String = ""):void
         {
             super.initAd(width, height, viewMode, desiredBitrate, creativeData, environmentVars);
+			
+			updateBackground(width, height);
+			
+			dispatchEvent(new AdEvent(AdEvent.AD_LOADED));
         }
         
         override public function resizeAd(width:Number, height:Number, viewMode:String):void
@@ -82,6 +98,32 @@ package com.hinish.examples.vast
         {
             super.adVolume = value;
         }
+		
+		
+		
+		/**************************
+		 * 
+		 * Example Ad methods
+		 * 
+		 *************************/
+		
+		
+		private function updateBackground(width:Number, height:Number):void
+		{
+			if (!_bg)
+			{
+				addChild(_bg = new Sprite());
+			}
+			
+			_bg.graphics.clear();
+			_bg.graphics.beginFill(0xFF0000, 0.7);
+			_bg.graphics.drawRect(0, 0, width, height);
+			_bg.graphics.endFill();
+			_bg.graphics.beginFill(0x00FF00, 0.9);
+			_bg.graphics.drawRect(10, 10, width - 20, height - 20);
+			_bg.graphics.endFill();
+		}
+		
         
     }
 }
