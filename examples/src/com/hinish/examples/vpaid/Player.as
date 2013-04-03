@@ -2,7 +2,7 @@ package com.hinish.examples.vpaid
 {
     import com.hinish.spec.iab.vpaid.AdEvent;
     import com.hinish.spec.iab.vpaid.AdViewMode;
-    
+
     import flash.display.DisplayObject;
     import flash.display.Loader;
     import flash.display.MovieClip;
@@ -11,17 +11,24 @@ package com.hinish.examples.vpaid
     import flash.events.Event;
     import flash.events.IOErrorEvent;
     import flash.net.URLRequest;
+    import flash.system.ApplicationDomain;
+    import flash.system.LoaderContext;
+    import flash.system.SecurityDomain;
+    import flash.utils.describeType;
 
     [SWF(width = "720", height = "480", backgroundColor = "#00FFFF")]
     public class Player extends MovieClip
     {
         private const VPAID_VERSION:String = "2.0";
 
+
         private var _loader:Loader;
 
         private var _ad:Object;
 
         private var _adVPAIDVersion:String;
+
+        private var _adStartRequested:Boolean = false;
 
         public function Player()
         {
@@ -49,16 +56,16 @@ package com.hinish.examples.vpaid
         {
             _loader = new Loader();
             _loader.contentLoaderInfo.addEventListener(Event.COMPLETE, completeHandler);
-			_loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, errorHandler);
-            _loader.load(new URLRequest("ExampleAd.swf"));
+            _loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, errorHandler);
+            _loader.load(new URLRequest(AD_URL), new LoaderContext(false, ApplicationDomain.currentDomain, SecurityDomain.currentDomain));
         }
-		
-		private function errorHandler(event:Event):void
-		{
-			// Just kill the event for this example.
-			event.preventDefault();
-			event.stopImmediatePropagation();
-		}			
+
+        private function errorHandler(event:Event):void
+        {
+            // Just kill the event for this example.
+            event.preventDefault();
+            event.stopImmediatePropagation();
+        }
 
         private function completeHandler(event:Event):void
         {
@@ -80,6 +87,7 @@ package com.hinish.examples.vpaid
                 }
                 // Just assuming it's a IEventDispatcher. 
                 _ad.addEventListener(AdEvent.AD_LOADED, adLoadedHandler);
+                _ad.addEventListener(AdEvent.AD_REMAINING_TIME_CHANGE, adRemainingTimeChangeHandler);
 
                 if (_ad.hasOwnProperty("initAd"))
                 {
@@ -88,13 +96,30 @@ package com.hinish.examples.vpaid
             }
         }
 
+        private function startAd():void
+        {
+            if (!_adStartRequested)
+            {
+                _ad.x = 20;
+                _ad.y = 20;
+                addChild(_ad as DisplayObject);
+                _adStartRequested = true;
+                _ad.startAd();
+            }
+        }
+
         private function adLoadedHandler(event:Event):void
         {
             trace("PLAYER >> AD LOADED");
-            _ad.x = 20;
-            _ad.y = 20;
-            addChild(_ad as DisplayObject);
-			_ad.startAd();
+            startAd();
+        }
+
+
+
+        private function adRemainingTimeChangeHandler(event:Event):void
+        {
+            var x:XML = describeType(_ad);
+            startAd();
         }
     }
 }
