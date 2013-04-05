@@ -1,0 +1,389 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="IVPAIDAd,com.hinish.spec.iab.vpaid.IVPAIDAd,AD_CLICK_THRU,AD_DURATION_CHANGE,AD_ERROR,AD_EXPANDED_CHANGE,AD_IMPRESSION,AD_INTERACTION,AD_LINEAR_CHANGE,AD_LOADED,AD_LOG,AD_PAUSED,AD_PLAYING,AD_REMAINING_TIME_CHANGE,AD_SIZE_CHANGE,AD_SKIPPABLE_STATE_CHANGED,AD_SKIPPED,AD_STARTED,AD_STOPPED,AD_USER_ACCEPT_INVITATION,AD_USER_CLOSE,AD_USER_MINIMIZE,AD_VIDEO_COMPLETE,AD_VIDEO_FIRST_QUARTILE,AD_VIDEO_MIDPOINT,AD_VIDEO_START,AD_VIDEO_THIRD_QUARTILE,AD_VOLUME_CHANGE,FULLSCREEN,NORMAL,NOT_IMPLEMENTED,THUMBNAIL,UNKNOWN,adCompanions,adCompanions,adCompanions,adDuration,adDuration,adDuration,adExpanded,adExpanded,adExpanded,adHeight,adHeight,adHeight,adIcons,adIcons,adIcons,adLinear,adLinear,adLinear,adRemainingTime,adRemainingTime,adRemainingTime,adSkippableState,adSkippableState,adSkippableState,adVolume,adVolume,adVolume,adWidth,adWidth,adWidth,creativeData,creativeData,data,desiredBitrate,desiredBitrate,environmentVars,environmentVars,viewMode,viewMode,clone,collapseAd,collapseAd,collapseAd,expandAd,expandAd,expandAd,handshakeVersion,handshakeVersion,handshakeVersion,initAd,initAd,initAd,pauseAd,pauseAd,pauseAd,resizeAd,resizeAd,resizeAd,resumeAd,resumeAd,resumeAd,skipAd,skipAd,skipAd,startAd,startAd,startAd,stopAd,stopAd,stopAd"><title>com.hinish.spec.iab.vpaid.IVPAIDAd</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'IVPAIDAd - API Documentation';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../index.html?com/hinish/spec/iab/vpaid/IVPAIDAd.html&amp;com/hinish/spec/iab/vpaid/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">IVPAIDAd</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("IVPAIDAd"); titleBar_setSubNav(false,true,false,false,false,false,true,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.hinish.spec.iab.vpaid</a></td></tr><tr><td class="classHeaderTableLabel">Interface</td><td class="classSignature">public  interface  IVPAIDAd</td></tr><tr><td class="classHeaderTableLabel">Implementors</td><td> <a href="../../../../../com/hinish/spec/iab/vpaid/AdMovieClipBase.html">AdMovieClipBase</a>,  <a href="../../../../../com/hinish/spec/iab/vpaid/AdSpriteBase.html">AdSpriteBase</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  10</td></tr></table><p></p><p></p><p></p>
+	 Basis for all SWF-based ad components.
+	 	 <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#adCompanions" class="signatureLink">adCompanions</a> : String<div class="summaryTableDescription">[read-only] 
+		 Companion banners are ads that display outside
+		 the video player area to reinforce the
+		 messaging provided in the video ad unit.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#adDuration" class="signatureLink">adDuration</a> : Number<div class="summaryTableDescription">[read-only] 
+		 An ad unit may provide the adDuration property
+		 to indicate the total duration of the ad,
+		 relative to the current state of the ad unit.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#adExpanded" class="signatureLink">adExpanded</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 The adExpanded Boolean value indicates
+		 whether the ad is in a state where it
+		 occupies more UI area than its smallest
+		 area.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#adHeight" class="signatureLink">adHeight</a> : Number<div class="summaryTableDescription">[read-only] 
+		 The adHeight property provides the ad’s height in pixels and
+		 is updated along with the adWidth property anytime the
+		 AdSizeChange event is sent to the video player, usually after
+		 the video player calls resizeAd().</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#adIcons" class="signatureLink">adIcons</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 The video player can use the adIcons property to avoid
+		 displaying duplicate icons over any icons that might
+		 be provided in the ad unit.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#adLinear" class="signatureLink">adLinear</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 The adLinear Boolean indicates the ad’s
+		 current linear vs.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#adRemainingTime" class="signatureLink">adRemainingTime</a> : Number<div class="summaryTableDescription">[read-only] 
+		 The player may use the adRemainingTime
+		 property to update player UI during ad
+		 playback.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#adSkippableState" class="signatureLink">adSkippableState</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 Common to skippable ads is a timeframe for when
+		 they’re allowed to be skipped.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#adVolume" class="signatureLink">adVolume</a> : Number<div class="summaryTableDescription">
+		 The player uses the adVolume property to
+		 attempt to set or get the ad volume.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#adWidth" class="signatureLink">adWidth</a> : Number<div class="summaryTableDescription">[read-only] 
+		 The adWidth property provides the ad’s width in pixels
+		 and is updated along with the adHeight property anytime
+		 the AdSizeChange event is sent to the video player, usually
+		 after the video player calls resizeAd().</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#collapseAd()" class="signatureLink">collapseAd</a>():void</div><div class="summaryTableDescription">
+		 collapseAd is called by the player to
+		 request that the ad return to its
+		 smallest UI size.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#expandAd()" class="signatureLink">expandAd</a>():void</div><div class="summaryTableDescription">
+		 expandAd is called by the player to request
+		 that the ad switch to its larger UI size.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#handshakeVersion()" class="signatureLink">handshakeVersion</a>(playerVPAIDVersion:String):String</div><div class="summaryTableDescription">
+		 The player calls handshakeVersion immediately
+		 after loading the ad to indicate to the ad
+		 that VPAID will be used.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#initAd()" class="signatureLink">initAd</a>(width:Number, height:Number, viewMode:String, desiredBitrate:Number, creativeData:String, environmentVars:String):void</div><div class="summaryTableDescription">
+		 After the ad is loaded and the player calls
+		 handshakeVersion, the player calls initAd to
+		 initialize the ad experience.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pauseAd()" class="signatureLink">pauseAd</a>():void</div><div class="summaryTableDescription">
+		 pauseAd is called to pause ad playback.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#resizeAd()" class="signatureLink">resizeAd</a>(width:Number, height:Number, viewMode:String):void</div><div class="summaryTableDescription">
+		 Following a resize of the ad UI container, the
+		 player calls resizeAd to allow the ad to scale
+		 or reposition itself within its display area.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#resumeAd()" class="signatureLink">resumeAd</a>():void</div><div class="summaryTableDescription">
+		 resumeAd is called to continue ad playback
+		 following a call to pauseAd.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#skipAd()" class="signatureLink">skipAd</a>():void</div><div class="summaryTableDescription">
+		 This method supports skip controls that the video
+		 player may implement.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#startAd()" class="signatureLink">startAd</a>():void</div><div class="summaryTableDescription">
+		 startAd is called by the player and is called
+		 when the player wants the ad to start displaying.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stopAd()" class="signatureLink">stopAd</a>():void</div><div class="summaryTableDescription">
+		 stopAd is called by the player when it will
+		 no longer display the ad.</div></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr></table></div><a name="eventSummary"></a><div class="summarySection"><div class="summaryTableTitle">Events</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdClickThru" class="signatureLink">AdClickThru</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdDurationChanged" class="signatureLink">AdDurationChanged</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdError" class="signatureLink">AdError</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdExpandedChange" class="signatureLink">AdExpandedChange</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdImpression" class="signatureLink">AdImpression</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdInteraction" class="signatureLink">AdInteraction</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdLinearChange" class="signatureLink">AdLinearChange</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdLoaded" class="signatureLink">AdLoaded</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdLog" class="signatureLink">AdLog</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdPaused" class="signatureLink">AdPaused</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdPlaying" class="signatureLink">AdPlaying</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdRemainingTimeChange" class="signatureLink">AdRemainingTimeChange</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdSizeChange" class="signatureLink">AdSizeChange</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdSkippableStateChange" class="signatureLink">AdSkippableStateChange</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdSkipped" class="signatureLink">AdSkipped</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdStarted" class="signatureLink">AdStarted</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdStopped" class="signatureLink">AdStopped</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdUserAcceptInvitation" class="signatureLink">AdUserAcceptInvitation</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdUserClose" class="signatureLink">AdUserClose</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdUserMinimize" class="signatureLink">AdUserMinimize</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdVideoComplete" class="signatureLink">AdVideoComplete</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdVideoFirstQuartile" class="signatureLink">AdVideoFirstQuartile</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdVideoMidpoint" class="signatureLink">AdVideoMidpoint</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdVideoStart" class="signatureLink">AdVideoStart</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdVideoThirdQuartile" class="signatureLink">AdVideoThirdQuartile</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:AdVolumeChange" class="signatureLink">AdVolumeChange</a></div></td><td class="summaryTableDescription summaryTableCol"></td><td class="summaryTableOwnerCol">IVPAIDAd</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="adCompanions"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">adCompanions</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>adCompanions:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Companion banners are ads that display outside
+		 the video player area to reinforce the
+		 messaging provided in the video ad unit. In
+		 some cases, a VPAID ad unit may request ads
+		 from other ad servers after initAd() has been
+		 called, and makes a decision about which ad it
+		 will display, which may or may not include ad
+		 companions. For example, a client-side yield
+		 management SDK may wrap itself in a VPAID ad
+		 when a native SDK integration might be cumbersome.
+		 In this scenario, the ad server that served the
+		 initial VAST response may not know which ad will
+		 be displayed, and therefore the VAST response
+		 itself does not include ad companions.
+		 		 <p>VPAID 2.0 enables an ad server to serve a
+		 VAST response which has no companions, but which
+		 does have a VPAID ad unit that pulls in ad
+		 companions dynamically based on the adserving
+		 situation. The video player can then check the
+		 VPAID ad unit for ad companions when the VAST
+		 response has none.</p>
+		 		 <p>The video player is not required to poll this
+		 property, and because ad companion information
+		 from the VAST response takes precedence over
+		 VPAID ad companions, the video player should only
+		 access this property when the VAST response is
+		 absent of any ad companions.</p>
+		 		 <p>The value of this property is a String that
+		 provides ad companion details in VAST 3.0 format
+		 for the &lt;CompanionAds> element, and should
+		 contain all the media files and details for
+		 displaying the ad companions (i.e. the format
+		 should be of an InLine response and not in
+		 Wrapper format). Also, the value should only
+		 include details within the &lt;CompanionAds>
+		 element and not an entire VAST response. If any XML
+		 elements are included outside of the
+		 &lt;CompanionAds> element, they must be ignored,
+		 including any &lt;Impression> elements that might
+		 have been included. However, VAST companion ad
+		 &lt;TrackingEvents> elements for
+		 &lt;Tracking event="creativeView"> must be respected.</p>
+		 		 <p>If the video player calls for adCompanions(),
+		 it must wait until after receiving the VPAID
+		 AdLoaded event, and any companions provided must
+		 not display until after the VPAID AdImpression
+		 event is received. Delaying companion display
+		 until after the AdImpression event prevents display
+		 of any companion banners in the case where the
+		 video ad fails to register an impression.If this
+		 property is used but no Companions are available
+		 the property should return an empty string.</p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get adCompanions():String</code><br/></div><a name="propertyDetail"></a><a name="adDuration"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">adDuration</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>adDuration:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 An ad unit may provide the adDuration property
+		 to indicate the total duration of the ad,
+		 relative to the current state of the ad unit.
+		 When user interaction changes the total
+		 duration of the ad, the ad unit should update
+		 this property and send the adDurationChange
+		 event. The initial value for adDuration is the
+		 expected duration before any user interaction.
+		 		 <p>The video player may check the adDuration
+		 property at any time, but should always check
+		 it when receiving an adDurationChange event.</p>
+		 		 <p>If duration is not implemented, the ad unit
+		 returns a -1 value. If the duration is unknown,
+		 the ad unit returns a -2. Unknown duration is
+		 typical when the user has engaged the ad.</p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get adDuration():Number</code><br/></div><a name="propertyDetail"></a><a name="adExpanded"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">adExpanded</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>adExpanded:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The adExpanded Boolean value indicates
+		 whether the ad is in a state where it
+		 occupies more UI area than its smallest
+		 area. If the ad has multiple expanded
+		 states, all expanded states show
+		 adExpanded being true. An AdExpandedChange
+		 event indicates the value has changed, but
+		 the player may check the property at any
+		 time. If ad is statically sized adExpanded
+		 is set to false.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get adExpanded():Boolean</code><br/></div><a name="propertyDetail"></a><a name="adHeight"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">adHeight</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>adHeight:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The adHeight property provides the ad’s height in pixels and
+		 is updated along with the adWidth property anytime the
+		 AdSizeChange event is sent to the video player, usually after
+		 the video player calls resizeAd(). The ad unit may change its
+		 size to width and height values equal to or less than the
+		 values provided by the video player in the Width and Height
+		 parameters of the resizeAd() method. If the ViewMode parameter
+		 in the resizeAd() call is set to “fullscreen,” then the ad unit
+		 can ignore the Width and Height values of the video player and
+		 resize to any dimension. The video player may use adWidth and
+		 adHeight values to verify that the ad is appropriately sized.
+		 		 <p>Note: The value for the adHeight property may be different
+		 from the height value that the video player supplies when it
+		 calls resizeAd(). The resizeAd() method provides the video
+		 player’s maximum allowed value for height, but the adHeight
+		 property provides the ad’s actual height, which must be equal
+		 to or less than the video player’s supplied height.</p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get adHeight():Number</code><br/></div><a name="propertyDetail"></a><a name="adIcons"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">adIcons</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>adIcons:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The video player can use the adIcons property to avoid
+		 displaying duplicate icons over any icons that might
+		 be provided in the ad unit. Until the industry
+		 provides more guidance on how to pass metadata using
+		 common ad-serving protocols, this property is limited
+		 to a Boolean response. The default value is False. If
+		 one or more ad icons are present within the ad, the
+		 value returned is True. When set to True, the video
+		 player should not display any ad icons of its own.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get adIcons():Boolean</code><br/></div><a name="propertyDetail"></a><a name="adLinear"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">adLinear</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>adLinear:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The adLinear Boolean indicates the ad’s
+		 current linear vs. non-linear mode of
+		 operation. adLinear when true indicates
+		 the ad is in a linear playback mode,
+		 false nonlinear. The player checks adLinear
+		 initially as well as each time an
+		 AdLinearChange event is received and
+		 updates its state according to the
+		 particulars of the ad placement. While
+		 the ad is in linear mode, the player has
+		 the content video paused. If adLinear is
+		 set to true initially and the ad is
+		 designated as a pre-roll (defined
+		 externally), the player may choose to
+		 delay loading the content video until
+		 near the end of the ad playback.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get adLinear():Boolean</code><br/></div><a name="propertyDetail"></a><a name="adRemainingTime"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">adRemainingTime</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>adRemainingTime:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The player may use the adRemainingTime
+		 property to update player UI during ad
+		 playback. The adRemainingTime property is
+		 in seconds and is relative to the time the
+		 property is accessed. The player may
+		 periodically poll the adRemainingTime
+		 property, but should always check it when
+		 receiving an AdRemainingTimeChange event.
+		 If not implemented, returns -1. If unknown,
+		 returns -2. The player may use the
+		 adRemainingTime property value to display
+		 a countdown timer or other ad duration
+		 indicator.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get adRemainingTime():Number</code><br/></div><a name="propertyDetail"></a><a name="adSkippableState"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">adSkippableState</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>adSkippableState:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Common to skippable ads is a timeframe for when
+		 they’re allowed to be skipped. For example, some
+		 ads may only be skipped a few seconds after the
+		 ad has started or may not allow the ad to be
+		 skipped as it nears the end of playback.
+		 		 <p>The adSkippableState enables advertisers and
+		 publishers to align their metrics based on what
+		 can and cannot be skipped.</p>
+		 		 <p>The default value for this property is false.
+		 When the ad reaches a point where it can be
+		 skipped, the ad unit updates this property to
+		 true and sends the AdSkippableStateChange event.
+		 The video player can check this property at any
+		 time, but should always check it when the
+		 AdSkippableStateChange event is received.</p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get adSkippableState():Boolean</code><br/></div><a name="propertyDetail"></a><a name="adVolume"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">adVolume</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>adVolume:Number</code><p></p><p></p><p>
+		 The player uses the adVolume property to
+		 attempt to set or get the ad volume. The
+		 adVolume value is between 0 and 1 and is
+		 linear. The player is responsible for
+		 maintaining mute state and setting the
+		 ad volume accordingly. If not implemented
+		 the get always returns -1. If set is not
+		 implemented, does nothing.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get adVolume():Number</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set adVolume(value:Number):void</code><br/></div><a name="propertyDetail"></a><a name="adWidth"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">adWidth</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>adWidth:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The adWidth property provides the ad’s width in pixels
+		 and is updated along with the adHeight property anytime
+		 the AdSizeChange event is sent to the video player, usually
+		 after the video player calls resizeAd(). The ad unit may
+		 change its size to width and height values equal to or less
+		 than the values provided by the video player in the Width and
+		 Height parameters of the resizeAd() method. If the ViewMode
+		 parameter in the resizeAd() call is set to “fullscreen,”
+		 then the ad unit can ignore the Width and Height values of
+		 the video player and resize to any dimension. The video player
+		 may use adWidthand adHeight values to verify that the ad is
+		 appropriately sized.
+		 		 <p>Note: adWidth value may be different than resizeAd() values.
+		 The value for the adWidth property may be different from the
+		 width value that the video player supplies when it calls
+		 resizeAd(). The resizeAd() method provides the video player’s
+		 maximum allowed value for width, but the adWidth property
+		 provides the ad’s actual width, which must be equal to or
+		 less than the video player’s supplied width.</p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get adWidth():Number</code><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="collapseAd()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">collapseAd</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function collapseAd():void</code><p></p><p></p><p>
+		 collapseAd is called by the player to
+		 request that the ad return to its
+		 smallest UI size. For example, the
+		 player may implement a close button
+		 that calls collapseAd when clicked and
+		 is displayed only when the ad is in an
+		 expanded state (see adExpanded property
+		 below). collapseAd may not be applicable
+		 to all ads.
+		 </p></div><a name="expandAd()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">expandAd</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function expandAd():void</code><p></p><p></p><p>
+		 expandAd is called by the player to request
+		 that the ad switch to its larger UI size.
+		 For example, the player may implement an
+		 open button that calls expandAd when
+		 clicked. (see adExpanded property below)
+		 The player may use the value of the
+		 adExpanded property as well as an
+		 AdExpandedChange event to determine when
+		 to display an open or a close button, if
+		 required. expandAd may not be applicable
+		 to all ads.
+		 </p></div><a name="handshakeVersion()"></a><a name="handshakeVersion(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">handshakeVersion</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function handshakeVersion(playerVPAIDVersion:String):String</code><p></p><p></p><p>
+		 The player calls handshakeVersion immediately
+		 after loading the ad to indicate to the ad
+		 that VPAID will be used. The player passes in
+		 its latest VPAID version string. The ad
+		 returns a version string minimally set to
+		 “1.0”, and of the form “major.minor.patch”.
+		 The player must verify that it supports the
+		 particular version of VPAID or cancel the ad.
+		 All VPAID versions are backwards compatible
+		 within the same major version number (but not
+		 forward compatible). So if the player supports
+		 “2.1.05” and the ad indicates “2.0.23”, the
+		 player can run the ad, but not in the reverse
+		 situation. Static interface definition
+		 implementations may require an external agreement
+		 for version matching. Dynamic implementations
+		 may use the handshakeVersion method call to
+		 determine if an ad supports VPAID. For dynamic
+		 languages, the ad or the player can adapt to
+		 match the other’s version if necessary. A good
+		 practice is to always call handshakeVersion even
+		 if the version has been coordinated externally,
+		 in case the ad supports multiple versions and
+		 uses handshakeVersion to decide which to act on
+		 at runtime.
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">playerVPAIDVersion</span>:String</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>String</code></td></tr></table></div><a name="initAd()"></a><a name="initAd(Number,Number,String,Number,String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">initAd</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function initAd(width:Number, height:Number, viewMode:String, desiredBitrate:Number, creativeData:String, environmentVars:String):void</code><p></p><p></p><p>
+		 After the ad is loaded and the player calls
+		 handshakeVersion, the player calls initAd to
+		 initialize the ad experience. The player may
+		 pre-load the ad and delay calling initAd until
+		 nearing the ad playback time, however, the ad
+		 does not load its assets until initAd is called.
+		 The ad sends the AdLoaded event to notify the
+		 player that its assets are loaded and it is ready
+		 for display. The player passes a width and height
+		 to indicate the display area for the ad. viewMode
+		 can be one of “normal”, “thumbnail”, or
+		 “fullscreen” to indicate the players current
+		 viewing mode, as defined by the player and ad
+		 publisher and may not be applicable to all ads.
+		 The player also passes a desired Bitrate in kbps
+		 (kilobits per second) that the ad may use when
+		 selecting the bitrate for any streaming content.
+		 creativeData is an optional parameter that can be
+		 used for passing in additional ad initialization
+		 data; for example, the extensions node of a VAST
+		 [4] response. enviromentVars is an optional
+		 parameter that can be used for passing
+		 implementation-specific runtime variables,
+		 URL-encoded name=value pairs separated by ‘&’.
+		 (see resizeAd below for more information on sizing)
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">width</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">height</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">viewMode</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">desiredBitrate</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">creativeData</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">environmentVars</span>:String</code></td></tr></table></p></div><a name="pauseAd()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pauseAd</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function pauseAd():void</code><p></p><p></p><p>
+		 pauseAd is called to pause ad playback. The
+		 ad sends an AdPaused event when the ad
+		 has been paused. The ad must turn off all
+		 audio and suspend any animation or video.
+		 The player may use pause in order to then
+		 hide the ad by settings its display
+		 container’s visibility. It the discretion of
+		 the ad whether to remove UI elements or
+		 just stop their animation and perhaps
+		 dim their brightness.
+		 </p></div><a name="resizeAd()"></a><a name="resizeAd(Number,Number,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">resizeAd</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function resizeAd(width:Number, height:Number, viewMode:String):void</code><p></p><p></p><p>
+		 Following a resize of the ad UI container, the
+		 player calls resizeAd to allow the ad to scale
+		 or reposition itself within its display area.
+		 The width and height always matches the maximum
+		 display area allotted for the ad, and resizeAd
+		 is only called when the player changes its
+		 video content container sizing. For ads that
+		 expand or go into linear mode, the entire
+		 video content display area is given in the
+		 width height as these ads may take up that
+		 entire area when in linear or expanded modes.
+		 Also, the player should avoid using the built-in
+		 scaling and sizing properties or methods for
+		 the particular implementation technology.
+		 viewMode can be one of “normal”, “thumbnail”,
+		 or “fullscreen” to indicate the players current
+		 viewing mode, as defined by the player and ad
+		 publisher and may not be applicable to all ads.
+		 The player should never set the width, height,
+		 scaleX, or scaleY properties of the ad, but
+		 should mask the ad to the provided width and
+		 height. However, the player may set the x and
+		 y properties of the ad to position. As well,
+		 the ad may choose to mask itself to the width
+		 and height to ensure UI placed off screen is
+		 never visible.
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">width</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">height</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">viewMode</span>:String</code></td></tr></table></p></div><a name="resumeAd()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">resumeAd</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function resumeAd():void</code><p></p><p></p><p>
+		 resumeAd is called to continue ad playback
+		 following a call to pauseAd. The ad
+		 sends an AdPlaying event when the
+		 ad has resumed playing.
+		 </p></div><a name="skipAd()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">skipAd</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function skipAd():void</code><p></p><p></p><p>
+		 This method supports skip controls that the video
+		 player may implement. This should kick-off the ad
+		 teardown phase.
+		 </p></div><a name="startAd()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">startAd</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function startAd():void</code><p></p><p></p><p>
+		 startAd is called by the player and is called
+		 when the player wants the ad to start displaying.
+		 The ad responds by sending an AdStarted event
+		 notifying the player the ad is now playing. An
+		 ad may not be restarted by the player by
+		 calling startAd + stopAd multiple time
+		 </p></div><a name="stopAd()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">stopAd</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function stopAd():void</code><p></p><p></p><p>
+		 stopAd is called by the player when it will
+		 no longer display the ad. stopAd is also
+		 called if the player needs to cancel an ad.
+		 However, the ad may take some time to close
+		 and clean up resources before sending an
+		 AdStopped event to the player.
+		 </p></div><div class="detailSectionHeader"> Event Detail </div><a name="event:AdClickThru"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdClickThru</td><td class="detailHeaderType"> Event </td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdDurationChanged"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdDurationChanged</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdError"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdError</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdExpandedChange"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdExpandedChange</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdImpression"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdImpression</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdInteraction"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdInteraction</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdLinearChange"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdLinearChange</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdLoaded"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdLoaded</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdLog"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdLog</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdPaused"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdPaused</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdPlaying"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdPlaying</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdRemainingTimeChange"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdRemainingTimeChange</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdSizeChange"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdSizeChange</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdSkippableStateChange"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdSkippableStateChange</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdSkipped"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdSkipped</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdStarted"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdStarted</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdStopped"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdStopped</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdUserAcceptInvitation"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdUserAcceptInvitation</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdUserClose"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdUserClose</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdUserMinimize"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdUserMinimize</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdVideoComplete"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdVideoComplete</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdVideoFirstQuartile"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdVideoFirstQuartile</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdVideoMidpoint"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdVideoMidpoint</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdVideoStart"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdVideoStart</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdVideoThirdQuartile"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdVideoThirdQuartile</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><a name="event:AdVolumeChange"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">AdVolumeChange</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../../../com/hinish/spec/iab/vpaid/AdEvent.html"><code>com.hinish.spec.iab.vpaid.AdEvent</code></a><br/><p></p><p></p><p></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Thu Oct 25 2012, 09:22 AM -07:00  </center></div></body></html><!--<br/>Thu Oct 25 2012, 09:22 AM -07:00  -->
